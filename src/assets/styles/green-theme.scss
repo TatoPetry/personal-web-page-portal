@@ -1,0 +1,8 @@
+@import './variables.scss';
+.main-container {
+    &.green {
+      background-color: $green-background;
+      color: $green-font;  
+  
+    }
+  }

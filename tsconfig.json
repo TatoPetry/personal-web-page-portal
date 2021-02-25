@@ -21,6 +21,6 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
-  ]
+    "./src/**/*.ts"
+, "src/shared/contexts/theme-context.tsx"  ]
 }

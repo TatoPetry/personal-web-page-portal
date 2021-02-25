@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './index.scss';
 import reportWebVitals from './reportWebVitals';
+import LayoutContainer from './shared/components/layout-container/layout-container';
+import { ThemeContextProvider } from './shared/contexts/theme-context';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ThemeContextProvider>            
+      <LayoutContainer />
+    </ThemeContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

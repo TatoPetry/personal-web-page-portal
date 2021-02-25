@@ -1,0 +1,8 @@
+@import './variables.scss';
+.main-container {
+    &.dark {
+      background-color: $dark-background;
+      color: $dark-font;  
+  
+    }
+  }
