@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import {ThemeContext} from '../../contexts/theme-context'
+import './theme.buttons.scss';
 
 import { Theme } from '../../enums/theme-enum';
 export interface Props {
@@ -14,6 +15,13 @@ class ThemeButtons  extends React.Component<Props, State> {
     
     theme = Theme;
 
+    activeTheme(theme) {
+        if (theme === this.context.theme) {
+            return 'active'
+        }
+        return ''
+    }
+
     static contextType = ThemeContext;
 
     render() {
@@ -21,10 +29,9 @@ class ThemeButtons  extends React.Component<Props, State> {
        return (
            
            <div className="theme-buttons-container">
-            <button onClick={() => {this.context.setTheme(this.theme.dark)}}>dark</button>
-            <button onClick={() => {this.context.setTheme(this.theme.green)}}>green</button>
-            <button onClick={() => {this.context.setTheme(this.theme.light)}}>light</button>
-            <h1>{this.context.theme}</h1>
+            <button className={"theme-button dark " + this.activeTheme(this.theme.dark)} onClick={() => {this.context.setTheme(this.theme.dark)}}></button>
+            <button className={"theme-button green " + this.activeTheme(this.theme.green)} onClick={() => {this.context.setTheme(this.theme.green)}}></button>
+            <button className={"theme-button light " + this.activeTheme(this.theme.light)} onClick={() => {this.context.setTheme(this.theme.light)}}></button>
           </div>
 
        )

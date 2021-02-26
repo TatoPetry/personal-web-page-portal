@@ -4,5 +4,14 @@
       background-color: $dark-background;
       color: $dark-font;  
   
+      .header {
+        border-bottom: 2px solid $dark-font;  
+      }
+      .main-content {
+      }
+      .menu {
+        border-right: 0.5px solid $dark-font;
+        background-color: $dark-background;
+      }
     }
-  }
+}

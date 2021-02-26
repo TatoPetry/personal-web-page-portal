@@ -1,0 +1,36 @@
+@import '../../../assets/styles/variables.scss';
+.main-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $small) {
+        //do Smth
+    }
+    @media screen and (min-width: $medium) {
+        //do Smth
+    }
+
+    .header {
+      height: $header-size;
+      width: 100%;
+
+    }
+    .main-content {
+      width: calc(100vw - $sidebar-size);
+      height: calc(100vh - $header-size);
+
+    }
+    .menu {
+       width: $sidebar-size;
+       height: 100vh;
+       position: absolute;
+       left: 0;
+
+
+    }
+}

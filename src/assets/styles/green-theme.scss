@@ -2,7 +2,14 @@
 .main-container {
     &.green {
       background-color: $green-background;
-      color: $green-font;  
-  
+      color: $green-font; 
+      .header {
+        border-bottom: 2px solid $green-font;  
+      }
+      .main-content {
+      }
+      .menu {
+        border-right: 0.5px solid $green-font;; 
+      } 
     }
   }

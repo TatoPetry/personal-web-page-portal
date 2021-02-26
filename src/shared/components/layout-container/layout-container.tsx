@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 import { ThemeContext } from '../../contexts/theme-context';
-
-
-
+import './layout-container.scss';
 import Header from "../header/header";
+import Menu from "../menu/menu";
+import RouterContent from "../router-content/router-content";
 
 
 class LayoutContainer extends React.Component {
@@ -19,7 +19,8 @@ class LayoutContainer extends React.Component {
     return (
         <div className={"main-container " + theme}>
           <Header />
-          <button onClick={() => {setTheme('green')}}>dark</button>
+          <Menu />
+          <RouterContent />
         </div>
     );
   }

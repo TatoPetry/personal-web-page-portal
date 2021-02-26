@@ -3,6 +3,13 @@
   &.light {
     background-color: $light-background;
     color: $light-font; 
-
+    .header {
+      border-bottom: 2px solid $light-font;  
+    }
+    .main-content {
+    }
+    .menu {
+      border-right: 0.5px solid $light-font;; 
+    } 
   }
 }
