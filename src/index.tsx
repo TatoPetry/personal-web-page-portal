@@ -1,14 +1,17 @@
+import './index.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
 import reportWebVitals from './reportWebVitals';
 import LayoutContainer from './shared/components/layout-container/layout-container';
 import { ThemeContextProvider } from './shared/contexts/theme-context';
+import { MenuControlContextProvider } from './shared/contexts/menu-control-context';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeContextProvider>            
-      <LayoutContainer />
+    <ThemeContextProvider>
+      <MenuControlContextProvider>
+        <LayoutContainer />
+      </MenuControlContextProvider>            
     </ThemeContextProvider>
   </React.StrictMode>,
   document.getElementById('root')

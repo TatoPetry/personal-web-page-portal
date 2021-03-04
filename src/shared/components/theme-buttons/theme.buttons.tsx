@@ -15,7 +15,7 @@ class ThemeButtons  extends React.Component<Props, State> {
     
     theme = Theme;
 
-    activeTheme(theme) {
+    activeTheme(theme: Theme) {
         if (theme === this.context.theme) {
             return 'active'
         }
@@ -25,7 +25,6 @@ class ThemeButtons  extends React.Component<Props, State> {
     static contextType = ThemeContext;
 
     render() {
-        console.log(this.context) 
        return (
            
            <div className="theme-buttons-container">

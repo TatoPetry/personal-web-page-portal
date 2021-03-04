@@ -1,4 +1,4 @@
-import { Children, createContext } from 'react';
+import { createContext } from 'react';
 import { Theme } from '../enums/theme-enum';
 import React from 'react';
 
@@ -19,8 +19,8 @@ export interface State {
 }
 
 export const ThemeContext = createContext<ThemeContextType>({theme: Theme.dark, setTheme: (e) => { console.log('no provider instance')}});
-
-export class ThemeContextProvider extends React.Component<Props, State> {
+  
+  export class ThemeContextProvider extends React.Component<Props, State> {
 
     state = {
         theme: Theme.dark        
@@ -30,6 +30,7 @@ export class ThemeContextProvider extends React.Component<Props, State> {
         this.setState((prevState) => ({theme: item}))
         console.log(this.state)               
     }
+
 
     render() {
         const { children } = this.props

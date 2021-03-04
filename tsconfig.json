@@ -20,7 +20,12 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  "files": [ 
+    "./src/custom.d.ts" 
+  ],  
   "include": [
-    "./src/**/*.ts"
-, "src/shared/contexts/theme-context.tsx"  ]
+    "./src/**/*.ts",
+    "./src/**/*",
+    "./src/custom.d.ts"
+    ]
 }

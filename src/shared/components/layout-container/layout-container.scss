@@ -21,8 +21,8 @@
 
     }
     .main-content {
-      width: calc(100vw - $sidebar-size);
-      height: calc(100vh - $header-size);
+      width: calc(100vw - #{$sidebar-size});
+      height: calc(100vh - #{$header-size});
 
     }
     .menu {
