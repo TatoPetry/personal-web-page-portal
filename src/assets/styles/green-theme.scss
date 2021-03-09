@@ -2,14 +2,30 @@
 .main-container {
     &.green {
       background-color: $green-background;
-      color: $green-font; 
+      color: $green-font;
+       
       .header {
         border-bottom: 2px solid $green-font;  
       }
+
       .main-content {
       }
+
       .menu-container {
-        border-right: 0.5px solid $green-font;; 
+        border-right: 0.5px solid $green-font;
+        background-color: $green-background;         
+      }
+
+      #header-menu-control {
+        background-color: $green-background;
+        .bar {
+          border: 4px solid $green-font;
+        }
+        &.close {
+            .bar {
+              border: 4px solid $green-font;
+            }
+        } 
       } 
     }
   }

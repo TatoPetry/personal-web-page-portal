@@ -1,10 +1,9 @@
 @import '../../../assets/styles/variables.scss';    
-@media screen and (max-width: 650px) {
+@media screen and (max-width: $small) {
     .menu-container {
        box-sizing: border-box;
        position: absolute;
        z-index: 10;
-       background:lightcoral !important;
        top: 0;
        left: 0;
        height: 100vh;
@@ -17,13 +16,18 @@
            max-height: 100vh;       
            transition: all 0.5s ease-in-out;
        }
-
     }
 }
 
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: $medium) {
     .menu-container {
-    
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: $sidebar-size;     
     }
 }

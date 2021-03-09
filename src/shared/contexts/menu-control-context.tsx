@@ -1,5 +1,4 @@
 import { createContext } from 'react';
-import { Theme } from '../enums/theme-enum';
 import React from 'react';
 
 
@@ -8,7 +7,6 @@ export type MenuControlContextType = {
     menuState: boolean;
     setMenuState: (menuState: boolean) => void;
 }
-
 
 export interface Props {
     

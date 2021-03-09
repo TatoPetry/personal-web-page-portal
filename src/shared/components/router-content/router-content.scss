@@ -4,15 +4,12 @@
     height: 100vh;
  }   
 @media screen and (max-width: $small) {
-    .header {
+    .main-content {
      } 
     //do Smth
 }
 @media screen and (min-width: $medium) {
-    .header {
-       height: $header-size;
-       padding-left: $header-size;
-       width: 100%;
+    .main-content {
        padding-left: 70px;
     }   
     //do Smth

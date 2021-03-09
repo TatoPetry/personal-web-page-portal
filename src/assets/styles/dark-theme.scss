@@ -7,11 +7,25 @@
       .header {
         border-bottom: 2px solid $dark-font;  
       }
+      
       .main-content {
       }
+
       .menu-container {
         border-right: 0.5px solid $dark-font;
         background-color: $dark-background;
+      }
+
+      #header-menu-control {
+        background-color: $dark-background;
+        .bar {
+          border: 4px solid $dark-font;
+        }
+        &.close {
+            .bar {
+              border: 4px solid $dark-font;
+            }
+        } 
       }
     }
 }
