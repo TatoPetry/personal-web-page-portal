@@ -21,7 +21,7 @@ export const MenuControlContext = createContext<MenuControlContextType>({menuSta
  export class MenuControlContextProvider extends React.Component<Props, State> {
 
     state = {
-        menuState: false        
+        menuState: true        
     }
 
     setMenuState = (item: boolean) => {

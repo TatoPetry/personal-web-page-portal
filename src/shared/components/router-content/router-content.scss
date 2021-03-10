@@ -1,7 +1,8 @@
 @import '../../../assets/styles/variables.scss';
 .main-content {
-    width: 100vw;
-    height: 100vh;
+    box-sizing: border-box;
+    width: calc(100vw - #{$sidebar-size});
+    height: calc(100vh - #{$header-size});
  }   
 @media screen and (max-width: $small) {
     .main-content {
@@ -10,7 +11,7 @@
 }
 @media screen and (min-width: $medium) {
     .main-content {
-       padding-left: 70px;
+       margin-left: $sidebar-size;
     }   
     //do Smth
 }

@@ -16,30 +16,4 @@
         //do Smth
     }
 
-    .header {
-      height: $header-size;
-      width: 100%;
-
-    }
-    .main-content {
-      width: calc(100vw - #{$sidebar-size});
-      height: calc(100vh - #{$header-size});
-
-    }
-    .menu {
-       width: $sidebar-size;
-       height: 100vh;
-       position: absolute;
-       left: 0;
-
-
-    }
-}
-@media screen and (max-width: 650px) {
-
-}
-
-
-@media screen and (min-width: 651px) {
-
-}
+  }
