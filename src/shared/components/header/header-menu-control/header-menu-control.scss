@@ -1,0 +1,55 @@
+@import '../../../../assets/styles/variables.scss';  
+@media screen and (max-width: $small) {
+    #header-menu-control {
+        position: relative;
+        z-index: 11;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        background-color: lightblue;
+        border-radius: 5px;
+        padding: 5px;
+        .bar {
+          border: 4px solid white;
+          width: 36px;
+          height: 0;
+          border-radius: 10px;
+          transition: all 1s;
+          &.bar-1 {
+            margin-bottom: 5px;
+          }
+          &.bar-2 {
+            opacity: 1;
+            margin-bottom: 5px;
+          }    
+        }
+        &.close {
+            .bar {
+              border: 4px solid white;
+              width: 35px;
+              height: 0;
+              border-radius: 10px;
+              transition: all 1s;
+              &.bar-1 {
+                  transform: rotate(45deg) translate(8px, 8px);
+              }
+              &.bar-2 {
+                  opacity: 0; 
+              }
+              &.bar-3 {
+                  transform: rotate(-45deg)  translate(10px, -9px);
+              }
+            }
+        } 
+    }
+}
+
+
+@media screen and (min-width: $medium) {
+    #header-menu-control {
+        display: none;
+    }
+}

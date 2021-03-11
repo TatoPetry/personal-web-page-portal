@@ -1,0 +1,42 @@
+.tp-icon {
+
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+      
+    &.angular {
+      background-image: url("../images/angular_icon.svg");
+    }
+    &.css {
+      background-image: url("../images/css_icon.svg");
+    }
+    &.facebook {
+      background-image: url("../images/facebook_icon.svg");
+    }
+    &.firebase {
+      background-image: url("../images/firebase_icon.svg");
+    }
+    &.home {
+      background-image: url("../images/home_icon.svg");
+    }
+    &.javascript {
+      background-image: url("../images/javascript_icon.svg");
+    }
+    &.linkedin {
+      background-image: url("../images/linkedin_icon.svg");
+    }
+    &.lista {
+      background-image: url("../images/lista_icon.svg");
+    }
+    &.logo {
+      background-image: url("../images/logo_icon.svg");
+    }
+    &.newspaper {
+      background-image: url("../images/newspaper_icon.svg");
+    }
+    &.youtube {
+      background-image: url("../images/youtube_icon.svg");
+    }      
+
+   
+}

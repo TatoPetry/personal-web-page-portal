@@ -1,0 +1,30 @@
+@import './variables.scss';
+.main-container {
+  &.light {
+    background-color: $light-background;
+    color: $light-font;
+
+    .header {
+      border-bottom: 2px solid $light-font;  
+    }
+
+    .main-content {
+    }
+
+    .menu-container {
+      border-right: 0.5px solid $light-font;
+      background-color: $light-background; 
+    }
+    #header-menu-control {
+      background-color: $light-background;
+      .bar {
+        border: 4px solid $light-font;
+      }
+      &.close {
+          .bar {
+            border: 4px solid $light-font;
+          }
+      } 
+    } 
+  }
+}

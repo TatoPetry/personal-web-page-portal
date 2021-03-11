@@ -1,0 +1,19 @@
+@import '../../../assets/styles/variables.scss';
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    // padding-left: 70px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $small) {
+        //do Smth
+    }
+    @media screen and (min-width: $medium) {
+        //do Smth
+    }
+
+  }

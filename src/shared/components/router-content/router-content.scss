@@ -1,0 +1,17 @@
+@import '../../../assets/styles/variables.scss';
+.main-content {
+    box-sizing: border-box;
+    width: calc(100vw - #{$sidebar-size});
+    height: calc(100vh - #{$header-size});
+ }   
+@media screen and (max-width: $small) {
+    .main-content {
+     } 
+    //do Smth
+}
+@media screen and (min-width: $medium) {
+    .main-content {
+       margin-left: $sidebar-size;
+    }   
+    //do Smth
+}

@@ -1,0 +1,31 @@
+@import '../../../assets/styles/variables.scss';
+.theme-buttons-container {
+    width: 120px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    .theme-button {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        outline: none;
+        display: flex;
+        cursor: pointer;
+        &.dark {
+           background-color: $dark-background;
+           border: 2px solid #ccc;
+        }
+        &.green {
+            background-color: $green-font;
+            border: 2px solid #ccc;
+        }
+        &.light {
+            background-color: $light-background;
+            border: 2px solid #ccc;
+        }
+        &.active {
+            transform: scale(1.2);
+            transition: all 0.7s;;
+        }
+    }
+}
