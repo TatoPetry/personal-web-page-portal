@@ -1,8 +1,9 @@
 import React, { ReactComponentElement } from "react";
-
+import {BrowserRouter, Link}  from "react-router-dom";
 export interface MenuButtonProps {
     icon: any[],
-    text: String    
+    text: String,
+    route: String    
 }
  
 export interface MenuButtonState {
@@ -12,8 +13,19 @@ export interface MenuButtonState {
 class MenuButton extends React.Component<MenuButtonProps, MenuButtonState> {
     // state = { :  }
     render() { 
-        return ( 
-            <div>{this.props.icon[0]} {this.props.text}</div>
+        return (
+            // <Router>
+                <Link to={'/' + this.props.route}>
+                   <div className="link-container">
+                       <div className="link-icon">
+                         {this.props.icon[0]}
+                       </div>
+                       <div className="link-text">
+                          {this.props.text}
+                       </div>
+                    </div>
+                </Link>
+            // </Router> 
          );
     }
 }

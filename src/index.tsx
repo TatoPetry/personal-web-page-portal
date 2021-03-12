@@ -1,6 +1,7 @@
 import './index.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import LayoutContainer from './shared/components/layout-container/layout-container';
 import { ThemeContextProvider } from './shared/contexts/theme-context';
@@ -8,13 +9,15 @@ import { MenuControlContextProvider } from './shared/contexts/menu-control-conte
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeContextProvider>
-      <MenuControlContextProvider>
-        <LayoutContainer />
-      </MenuControlContextProvider>            
-    </ThemeContextProvider>
+    <BrowserRouter>
+      <ThemeContextProvider>
+        <MenuControlContextProvider>
+          <LayoutContainer />
+        </MenuControlContextProvider>
+      </ThemeContextProvider>
+    </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -7,9 +7,11 @@
     .header {
       border-bottom: 2px solid $light-font;  
     }
-
-    .main-content {
+    .icon-fill {
+      fill: $light-font;
     }
+    // .main-content {
+    // }
 
     .menu-container {
       border-right: 0.5px solid $light-font;
