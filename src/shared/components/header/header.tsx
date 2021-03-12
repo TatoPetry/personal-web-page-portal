@@ -21,9 +21,13 @@ class Header extends React.Component<Props, State> {
                    <div className="slot1">
                     <HeaderMenuControl />                                           
                    </div>
+                   {/* To centralize slot2 */}
+                   <div></div>
+
                    <div className="slot2"> 
                     <h1>Artho Petry</h1>
                    </div>
+
                    <div className="slot3">
                        <ThemeButtons />
                    </div>

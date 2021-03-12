@@ -1,15 +1,16 @@
 @import '../../../assets/styles/variables.scss';
 .theme-buttons-container {
-    width: 120px;
+    width: 3.5em;
     padding: 10px;
     display: flex;
     justify-content: space-around;
     .theme-button {
-        width: 25px;
-        height: 25px;
+        width: 1em;
+        height: 1em;
         border-radius: 50%;
         outline: none;
         display: flex;
+        font-size: inherit;
         cursor: pointer;
         &.dark {
            background-color: $dark-background;
@@ -28,4 +29,17 @@
             transition: all 0.7s;;
         }
     }
+}
+
+@media screen and (max-width: $small) {
+    .theme-buttons-container {
+        font-size: 20px;
+    }
+    //do Smth
+}
+@media screen and (min-width: $medium) {
+    .theme-buttons-container {
+        font-size: 25px;
+    }
+    //do Smth
 }
