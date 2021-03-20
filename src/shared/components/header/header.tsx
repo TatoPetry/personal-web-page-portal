@@ -3,6 +3,7 @@ import ThemeButtons from "../theme-buttons/theme.buttons";
 // import {ReactComponent as Angular} from '../../../assets/images/angular_icon.svg';
 import HeaderMenuControl from "./header-menu-control/header-menu-control";
 import './header.scss';
+import { ReactComponent as Logo} from "../../../assets/images/logo.svg";
 
 export interface Props {
     
@@ -25,7 +26,7 @@ class Header extends React.Component<Props, State> {
                    <div></div>
 
                    <div className="slot2"> 
-                    <h1>Artho Petry</h1>
+                    <Logo />
                    </div>
 
                    <div className="slot3">

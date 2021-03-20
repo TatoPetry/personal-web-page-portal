@@ -22,10 +22,12 @@ class Menu extends React.Component<Props, State> {
     render() {             
         return ( 
             <div className={("menu-container " + (this.context.menuState? 'open' : 'close'))}>
-                <MenuButton text={'Home'} icon={[<HomeIcon/>]} route=""></MenuButton>
-                <MenuButton text={'Artigos'} icon={[<ArticlesIcon/>]} route={'articles'}></MenuButton>
-                <MenuButton text={'Videos'} icon={[<VideosIcon/>]} route={'videos'}></MenuButton>
-                <MenuButton text={'Portfolio'} icon={[<PortfolioIcon/>]} route={'portfolio'}></MenuButton>
+                <div className="menu-relative-container">
+                  <MenuButton text={'Home'} icon={[<HomeIcon/>]} route=""></MenuButton>
+                  <MenuButton text={'Artigos'} icon={[<ArticlesIcon/>]} route={'articles'}></MenuButton>
+                  <MenuButton text={'Videos'} icon={[<VideosIcon/>]} route={'videos'}></MenuButton>
+                  <MenuButton text={'Portfolio'} icon={[<PortfolioIcon/>]} route={'portfolio'}></MenuButton>
+                </div>
             </div>
         );
     }

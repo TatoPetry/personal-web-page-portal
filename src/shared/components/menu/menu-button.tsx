@@ -1,5 +1,6 @@
 import React, { ReactComponentElement } from "react";
 import {BrowserRouter, Link}  from "react-router-dom";
+import "./menu-button.scss";
 export interface MenuButtonProps {
     icon: any[],
     text: String,
